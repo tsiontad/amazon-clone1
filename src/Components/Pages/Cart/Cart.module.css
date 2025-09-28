@@ -1,0 +1,131 @@
+/* --- Cart Container --- */
+.cartContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Left: Cart Items */
+.cartItems {
+  flex: 0.7;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cartImg {
+  width: 120px;
+  object-fit: contain;
+}
+
+.cartDetails {
+  flex: 1;
+
+}
+
+.cartDetails h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cartDetails p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Quantity Buttons */
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.quantity button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #888;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+.quantity span {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Price */
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Remove Button */
+.removeBtn {
+  margin-top: 10px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Right: Subtotal Box */
+.subtotalBox {
+  flex: 0.3;
+  background: #f3f3f3;
+  padding: 20px;
+  border: 1px solid #ddd;
+  height: fit-content;
+}
+
+.subtotalBox p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gift {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.gift input {
+  margin-right: 5px;
+}
+
+.checkoutBtn {
+  width: 100%;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.checkoutBtn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #f0c14b; /* Amazon yellow */
+  border: 1px solid #a88734;
+  border-radius: 19px;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none; /* Remove underline for links */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutBtn:hover {
+  background-color: #ddb347;
+}

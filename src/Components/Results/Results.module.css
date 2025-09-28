@@ -1,0 +1,9 @@
+.product_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  width: 100%;          /* Ensure full width */
+  box-sizing: border-box;
+}

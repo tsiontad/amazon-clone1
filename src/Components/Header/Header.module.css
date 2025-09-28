@@ -1,0 +1,181 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Header --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #131921;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.delivery p {
+  font-size: 12px;
+}
+
+.delivery span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search select {
+  padding: 5px;
+  border: none;
+  background: #f3f3f3;
+}
+
+.search input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.searchIcon {
+  background: #febd69;
+  color: black;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.rightLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rightLinks a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.cart {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cartIcon {
+  font-size: 28px;
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f08804;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  text-align: center;
+  min-width: 18px;
+}
+
+/* Hover effects */
+.header_container a:hover,
+.delivery:hover,
+.rightLinks a:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+/* --- Lower Header / Navigation --- */
+.lowerHeader {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  position: sticky;
+  top: 60px; /* Adjust if main header height changes */
+  z-index: 900;
+}
+
+.lowerHeader ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.lowerHeader li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  padding: 5px 8px;
+  transition: background 0.3s ease;
+}
+
+.lowerHeader li:hover {
+  background-color: #37475a;
+  border-radius: 3px;
+}
+
+.menuAll {
+  font-weight: bold;
+}
+
+.menuIcon {
+  font-size: 18px;
+}
+
+.bigDeal {
+  font-weight: bold;
+  color: white;
+  margin-left: 40px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .lowerHeader ul {
+    gap: 5px;
+    overflow-x: auto;
+  }
+
+  .lowerHeader li p {
+    display: none; /* hide text for small screens */
+  }
+}

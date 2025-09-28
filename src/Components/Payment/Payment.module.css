@@ -1,0 +1,172 @@
+/* Payment.module.css - Simplified for school project */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+.container h1 {
+  text-align: center;
+  color: #232f3e;
+  margin-bottom: 30px;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #666;
+}
+
+.mockNotice {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #664d03;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section h3 {
+  margin-top: 0;
+  color: #232f3e;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Address Form */
+.addressForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+/* Items */
+.item {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.item div p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #232f3e;
+}
+
+/* Payment */
+.cardElement {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.mockCard {
+  background: #e8f5e8;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  border: 1px solid #f8bbd9;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.payButton {
+  width: 100%;
+  background: #ff9900;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.payButton:hover:not(:disabled) {
+  background: #e88b00;
+}
+
+.payButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+  
+  .item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .item img {
+    align-self: center;
+  }
+}

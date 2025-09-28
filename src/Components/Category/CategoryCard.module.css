@@ -1,0 +1,53 @@
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+  height: 180px; /* Taller to accommodate vertical layout */
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column; /* Changed back to column for vertical layout */
+  height: 100%;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.image {
+  width: 80px; /* Slightly larger image */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  align-self: center; /* Center the image */
+  margin-bottom: 10px;
+  flex-grow: 1; /* Take up available space */
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #007185;
+  font-size: 13px;
+  text-align: left;
+  margin-top: auto; /* Push to bottom */
+}
+
+.link:hover {
+  text-decoration: underline;
+}

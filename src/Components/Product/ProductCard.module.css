@@ -1,0 +1,137 @@
+/* Default grid card (small cards) */
+.card {
+  background-color: #fff;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #B12704;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 5px 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin: 20px 0 0 0; /* space above button */
+  border-radius: 30px;
+  position: relative; /* remove absolute */
+}
+
+
+.button:hover {
+  background-color: #FFD814;
+}
+
+/* ================================ */
+/* Product Detail Flex Layout */
+.product_flex {
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: none;
+  text-align: left;
+  position: relative;
+}
+
+/* Left: Product Image */
+.product_flex img {
+  width: 300px; /* default small size */
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 40px;
+  border-radius: 8px;
+}
+
+/* Zoom effect on click */
+.product_flex img.zoomed {
+  transform: scale(1.2);
+}
+
+/* Right: Details including description */
+.product_flex .details_section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Description */
+.product_flex .description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+.product_flex .button {
+  width: 150px;       /* fixed smaller width */
+  padding: 8px 12px;  /* smaller height and padding */
+  font-size: 16px;
+  border-radius: 8px;
+  position: static;   /* remove absolute */
+  margin-top: 10px;
+}
+
+
+/* Responsive: stack on mobile */
+@media screen and (max-width: 768px) {
+  .product_flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product_flex img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%; /* shrink image on mobile */
+  }
+
+  .product_flex .details_section {
+    align-items: center;
+  }
+}
