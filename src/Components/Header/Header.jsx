@@ -47,7 +47,9 @@ function Header() {
             <option>All</option>
           </select>
           <input type="text" placeholder="Search Amazon" />
-          <FaSearch className={classes.searchIcon} />
+          <div className={classes.searchIcon}>
+            <FaSearch />
+          </div>
         </div>
 
         {/* Right Links */}
@@ -85,7 +87,6 @@ function Header() {
               {basket?.reduce((total, item) => total + (item.quantity || 1), 0)}
             </span>
           </Link>
-          
         </div>
       </div>
 
